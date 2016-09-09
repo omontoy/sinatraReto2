@@ -4,6 +4,6 @@ get '/makers/:nombre' do
   unless params[:nombre]
     "Hola desconocido!"
   else
-    "Hola #{params[:nombre]}!"
+    "Hola " + "#{params[:nombre]}!".capitalize
   end
 end
